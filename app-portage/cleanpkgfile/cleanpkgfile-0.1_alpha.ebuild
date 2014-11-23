@@ -9,6 +9,7 @@ inherit git-r3
 DESCRIPTION="Checks and cleans your package.* files"
 HOMEPAGE="https://github.com/aayla-secura/cleanpkgfile"
 EGIT_REPO_URI="https://github.com/aayla-secura/cleanpkgfile.git"
+EGIT_COMMIT="${PV}"
 
 KEYWORDS="~amd64"
 
