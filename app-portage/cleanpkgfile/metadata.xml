@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>aayla.secura.1138@gmail.com</email>
+		<name>Aleksandrina Nikolova</name>
+	</maintainer>
+	<longdescription lang="en">
+		A perl script to "clean" package.* files:
+		joins entries referring to the same package-version(s),
+		removes duplicate and invalid USE flags, keywords, env files; sorts them, etc.;
+		commented lines are ignored, also ignores lines between matching #IGNORE# lines
+	</longdescription>
+</pkgmetadata>
