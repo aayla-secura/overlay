@@ -18,13 +18,14 @@ IUSE="zsh-completion"
 
 RDEPEND=">=dev-lang/perl-5.6.1
 	dev-perl/File-Find-Rule
+	zsh-completion? ( =app-shells/gentoo-zsh-completions-99999999 )
 "
 
 src_install() {
 	dosbin cleanpkgfile
 	dodoc README cleanpkgfile.conf.example
 	if use zsh-completion ; then
-	   instinto /usr/share/zsh/site-functions
+	   insinto /usr/share/zsh/site-functions
 	   doins _cleanpkgfile
 	fi
 }
