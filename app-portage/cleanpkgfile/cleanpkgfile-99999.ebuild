@@ -20,7 +20,7 @@ RDEPEND=">=dev-lang/perl-5.6.1
 	dev-perl/File-Find-Rule
 	zsh-completion? (
 		app-shells/zsh
-		=app-shells/gentoo-zsh-completions-99999999
+		app-shells/gentoo-zsh-completions
 	)
 "
 
