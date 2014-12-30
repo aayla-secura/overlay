@@ -14,21 +14,15 @@ KEYWORDS=""
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="zsh-completion"
+IUSE=""
 
 RDEPEND=">=dev-lang/perl-5.6.1
 	dev-perl/File-Find-Rule
-	zsh-completion? (
-		app-shells/zsh
-		app-shells/gentoo-zsh-completions
-	)
 "
 
 src_install() {
 	dosbin cleanpkgfile
 	dodoc README cleanpkgfile.conf.example
-	if use zsh-completion ; then
-	   insinto /usr/share/zsh/site-functions
-	   doins _cleanpkgfile
-	fi
+	insinto /usr/share/zsh/site-functions
+	doins _cleanpkgfile
 }
